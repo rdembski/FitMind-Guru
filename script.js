@@ -1,7 +1,3 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert("Dziękujemy za Twoje zapytanie!");
-});
 document.getElementById('contact-form').addEventListener('submit', async function(event) {
     event.preventDefault(); // Zapobiega domyślnej akcji przeglądarki
     const userInput = document.getElementById('user-input').value;
