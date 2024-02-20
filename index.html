@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitMind Guru</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>FitMind Guru</h1>
-    <input type="text" id="user-input" placeholder="Zadaj pytanie">
-    <button onclick="askGPT()">Zapytaj</button>
-    <p id="gpt-response">Odpowiedź pojawi się tutaj...</p>
-
+    <header>
+        <h1>FitMind Guru</h1>
+    </header>
+    <main>
+        <section id="about">
+            <h2>O FitMind Guru</h2>
+            <p>Innowacyjny asystent z zakresu fitnessu i zdrowego odżywiania...</p>
+        </section>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <form id="contact-form">
+                <input type="text" id="user-input" placeholder="Zadaj pytanie" required>
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 FitMind Guru</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
