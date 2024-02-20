@@ -1,0 +1,16 @@
+{
+  "name": "FitMind Guru",
+  "version": "1.0.0",
+  "description": "Krótki opis twojego projektu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafał Dembski",
+  "license": "MIT",
+  "dependencies": "dependencies": {
+  "openai": "^1.2.3"
+}
+ {
+  }
+}
