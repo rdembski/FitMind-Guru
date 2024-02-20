@@ -12,7 +12,7 @@ export default async (req, res) => {
     try {
         const { prompt } = req.body;
         const gptResponse = await openai.createCompletion({
-            model: "text-davinci-002",
+            model: "text-davinci-003", // Używamy standardowego modelu GPT
             prompt: prompt,
             max_tokens: 150,
         });
