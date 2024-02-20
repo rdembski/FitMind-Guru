@@ -9,6 +9,6 @@
   "author": "Rafał Dembski",
   "license": "MIT",
   "dependencies": {
-    "openai": "^1.2.3"
+    "openai": "^4.28.0"
   }
 }
