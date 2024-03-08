@@ -19,3 +19,4 @@ document.getElementById('food-analysis-form').addEventListener('submit', functio
         console.log('Analiza zdjęcia produktu...');
     }
 });
+addFeedback()
