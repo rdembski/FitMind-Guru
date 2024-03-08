@@ -1,22 +1,10 @@
-console.log("Welcome to FitMind Guru");
-document.getElementById('food-analysis-form').addEventListener('submit', function(event) {
+// Przykładowa funkcja do obsługi logowania
+function handleLogin(event) {
     event.preventDefault();
-    // Tutaj możesz dodać logikę przetwarzającą przesłane zdjęcie
-    console.log('Analiza zdjęcia produktu...');
-});
-document.getElementById('food-analysis-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    var fileInput = document.getElementById('foodImage');
-    var filePath = fileInput.value;
-    var allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+    // Logika logowania
+}
 
-    if (!allowedExtensions.exec(filePath)) {
-        alert('Proszę przesłać plik w formacie .jpeg/.jpg/.png/.gif.');
-        fileInput.value = '';
-        return false;
-    } else {
-        // Przetwarzaj zdjęcie...
-        console.log('Analiza zdjęcia produktu...');
-    }
-});
-addFeedback()
+// Przykładowa funkcja do przełączania zakładek
+function switchTab(tabId) {
+    // Logika przełączania zakładek
+}
