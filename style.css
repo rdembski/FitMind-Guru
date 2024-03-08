@@ -53,3 +53,9 @@ button:hover {
 section {
     animation: fadeIn 1s ease-in;
 }
+
+.container {
+    display: flex;
+    justify-content: center; /* Centruje zawartość w poziomie */
+    align-items: center; /* Centruje zawartość w pionie */
+}
