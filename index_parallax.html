@@ -14,11 +14,11 @@
 		<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">		
 		<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.css">
 		<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">								
-		<link rel="stylesheet" href="assets/css/venobox.css">								
+		<link rel="stylesheet" href="assets/css/venobox.css">		
 		<link rel="stylesheet" href="assets/css/animate.css">				
 		<link rel="stylesheet" href="assets/css/style.css">	
-		<link rel="stylesheet" href="assets/css/hero-style.css">
-		<script src="assets/js/modernizr.js"></script>
+		<link rel="stylesheet" href="assets/css/hero-style.css"> 
+		<script src="assets/js/modernizr.js"></script>		
 		<link rel="stylesheet" href="assets/css/switcher/switcher.css"> 	
 		<link rel="stylesheet" href="assets/css/switcher/style1.css" id="colors">		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -49,7 +49,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="logo"></a>
+						<a href="index_parallax.html" class="navbar-brand"><img src="assets/img/logo.png" alt="logo"></a>
 					</div>
 					<div class="navbar-collapse collapse">
 						<nav>
@@ -69,94 +69,22 @@
 			</div> 
 		<!-- END NAVBAR -->	
 		
-		<!-- START HOME DESIGN -->
-			<section class="cd-hero" id="home">
-				<ul class="cd-hero-slider autoplay">
-					<li class="selected">
-						<div class="slider-image">
-							<img src="assets/img/slider/slider1.jpg">
+		<!-- START HOME -->
+			<section data-stellar-background-ratio="0.3"  id="home" class="youtube_bg" style="background-image: url(assets/img/bg/index_parallax.jpg);  background-size:cover; background-position: center center;"> 
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="home_text">
+								<h2>Creative - Clean - Responsive</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+								<a class="btn btn-default btn-home-bg page-scroll" href="#video">Discover More</a>
+							</div>
 						</div>
-						
-			
-						<div class="cd-full-width">
-							<h2>Creative - Clean - Responsive</h2>
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-							<a href="" class="cd-btn btn-home-bg">Start With US</a>
-						</div> <!-- .cd-full-width -->
-				
-					</li>
-
-					<li>
-						<div class="slider-image">
-							<img src="assets/img/slider/slider2.jpg">
-						</div>
-						
-						<div class="cd-half-width text-left">
-							<h2>Start Your Business </h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
-							<a href="#0" class="cd-btn btn-home-bg">Start With US</a>
-							<a href="#0" class="cd-btn btn-home-border">Purchase Now</a>
-						</div> <!-- .cd-half-width -->
-
-					
-						<div class="cd-half-width cd-img-container">
-							<img src="assets/img/slider/desktop-image.png" alt="tech 1">
-						</div> <!-- .cd-half-width.cd-img-container -->
-						
-
-					</li>
-
-					<li>
-						<div class="slider-image">
-							<img src="assets/img/slider/slider3.jpg">
-						</div>
-						
-						
-						<div class="cd-half-width cd-img-container">
-							<img src="assets/img/slider/desktop-image.png" alt="tech 2">
-						</div> <!-- .cd-half-width.cd-img-container -->
-
-						<div class="cd-half-width text-left">
-							<h2>Join With US</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
-							<a href="#0" class="cd-btn btn-home-bg">Start With US</a>
-							<a href="#0" class="cd-btn btn-home-border">Purchase Now</a>
-						</div> <!-- .cd-half-width -->
-					
-					</li>
-
-					<li class="cd-bg-video">
-						
-						<div class="cd-full-width">
-							<h2>Video Background</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
-							<a href="#0" class="cd-btn btn-home-bg">Start With US</a>
-						</div> <!-- .cd-full-width -->
-						
-						<div class="slider-image"></div>
-							<div class="cd-bg-video-wrapper" data-video="assets/img/slider/video/video">
-								<!-- video element will be loaded using jQuery -->
-							</div> <!-- .cd-bg-video-wrapper -->
-						
-						
-					</li>
-
-				</ul> <!-- .cd-hero-slider -->
-
-				<div class="cd-slider-nav">
-					<nav>
-						<span class="cd-marker item-1"></span>
-						
-						<ul>
-							<li class="selected"><a href="#0"><i class="fa fa-home"></i>Intro</a></li>
-							<li><a href="#0"><i class="fa fa-briefcase"></i>Business</a></li>
-							<li><a href="#0"><i class="fa fa-globe"></i>Connect</a></li>
-							<li><a href="#0"><i class="fa fa-video-camera"></i>Video</a></li>
-						</ul>
-					</nav> 
-				</div> <!-- .cd-slider-nav -->
-			</section> <!-- .cd-hero -->	
-
+					</div>
+				</div>						
+			</section>
+		<!-- END  HOME DESIGN -->
+		
 		<!-- START FEATURE-->
 			<section id="about" class="feature section-padding">
 				<div class="container">
@@ -239,7 +167,6 @@
 									</div>
 								</div>
 							</div>
-
 						
 						</div><!--- END COL -->
 					</div><!--- END ROW -->		
@@ -974,27 +901,27 @@
 		<!-- START MAP -->
 			<!-- map js -->
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuU_0_uLMnFM-2oWod_fzC0atPZj7dHlU"></script>
-				<script>
-					function initialize() {
-					  var mapOptions = {
-						zoom: 15,
-						
-						scrollwheel: false,
-						center: new google.maps.LatLng(40.7127837, -74.00594130000002),
-						
-					  };
-					  var map = new google.maps.Map(document.getElementById('map'),
-						  mapOptions);
-					  var marker = new google.maps.Marker({
-						position: map.getCenter(),
-						icon: 'assets/img/map_pin.png',
-						map: map,
-						
-					  });
-			  
-					}
-					google.maps.event.addDomListener(window, 'load', initialize);				
-				</script>
+			<script>
+				function initialize() {
+				  var mapOptions = {
+					zoom: 15,
+					
+					scrollwheel: false,
+					center: new google.maps.LatLng(40.7127837, -74.00594130000002),
+					
+				  };
+				  var map = new google.maps.Map(document.getElementById('map'),
+					  mapOptions);
+				  var marker = new google.maps.Marker({
+					position: map.getCenter(),
+					icon: 'assets/img/map_pin.png',
+					map: map,
+					
+				  });
+		  
+				}
+				google.maps.event.addDomListener(window, 'load', initialize);				
+			</script>
 			<div id="map"></div>
 		<!-- END MAP -->
 		
@@ -1017,7 +944,7 @@
 								</div>	
 								<p>CopyRight © 2022 Ratio All Rights Reserved.</p>
 							</div>
-							
+								
 						</div><!--- END COL -->
 					</div><!--- END ROW -->
 				</div><!--- END CONTAINER -->	
@@ -1044,7 +971,7 @@
 		
 		<!-- START JQUERY -->
 			<script src="assets/js/jquery-1.12.4.min.js"></script>		
-			<script src="assets/bootstrap/js/bootstrap.min.js"></script>	
+			<script src="assets/bootstrap/js/bootstrap.min.js"></script>				
 			<script src="assets/js/modernizr-2.8.3.min.js"></script>					
 			<script src="assets/js/jquery.stellar.min.js"></script>				
 			<script src="assets/js/jquery.inview.min.js"></script>				
@@ -1053,8 +980,8 @@
 			<script src="assets/js/venobox.min.js"></script>				
 			<script src="assets/js/scrolltopcontrol.js"></script>		
 			<script src="assets/js/form-contact.js"></script>								
-			<script src="assets/js/jquery.appear.js"></script>			
-			<script src="assets/js/wow.min.js"></script>	
+			<script src="assets/js/jquery.appear.js"></script>					
+			<script src="assets/js/wow.min.js"></script>			
 			<script src="assets/js/switcher.js"></script>				
 			<script src="assets/js/hero-slider.js"></script>
 			<script src="assets/js/scripts.js"></script>
