@@ -1,3 +1,11 @@
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    // Tutaj dodaj logikę weryfikacji użytkownika
+    console.log('Logowanie użytkownika:', username);
+});
+
 // Przykładowa funkcja do obsługi logowania
 function handleLogin(event) {
     event.preventDefault();
