@@ -6,6 +6,12 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     console.log('Logowanie użytkownika:', username);
 });
 
+document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // Tutaj zaimplementuj logikę weryfikacji i rejestracji nowego użytkownika
+    console.log('Rejestracja nowego użytkownika');
+});
+
 // Przykładowa funkcja do obsługi logowania
 function handleLogin(event) {
     event.preventDefault();
