@@ -19,6 +19,11 @@ function handleLogin(event) {
 }
 
 // Przykładowa funkcja do przełączania zakładek
+
+function toggleMenu() {
+    document.getElementById('menuContainer').classList.toggle('active');
+}
+
 function switchTab(tabId) {
     // Logika przełączania zakładek
 }
