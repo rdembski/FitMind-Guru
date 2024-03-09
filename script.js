@@ -20,6 +20,11 @@ function handleLogin(event) {
 
 // Przykładowa funkcja do przełączania zakładek
 
+function toggleMenu() {
+    const menuContainer = document.getElementById('menuContainer');
+    menuContainer.classList.toggle('active');
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const menuButton = document.querySelector('.hamburger');
     const menuContainer = document.getElementById('menuContainer');
