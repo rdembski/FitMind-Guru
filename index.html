@@ -21,15 +21,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 </head>
 <body class="main-layout">
-    <!-- Treść strony: Nagłówek, Sekcje, Stopka, jak podano w poprzednich fragmentach -->
-    
-    <!-- Wklej tutaj treść swojej strony (nagłówek, sekcje, stopka) -->
-
-    <!-- Przełącznik trybu ciemnego/jasnego -->
-    <label class="theme-switch">
-      <input type="checkbox" class="theme-switch__checkbox">
-      <!-- SVG i elementy przełącznika z poprzednich fragmentów -->
-    </label>
+    <!-- Cała treść strony jak podano wcześniej -->
+    <!-- Nagłówek, Sekcje, Stopka -->
 
     <!-- Skrypty JS -->
     <script src="js/jquery.min.js"></script>
@@ -39,7 +32,6 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script>
-        // Kod dla Owl Carousel i innych skryptów
         $(document).ready(function() {
             $('.owl-carousel').owlCarousel({
                 margin: 10,
@@ -53,8 +45,8 @@
             });
 
             // Przełącznik motywu ciemnego/jasnego
-            const themeSwitch = document.querySelector('.theme-switch__checkbox');
-            themeSwitch.addEventListener('change', () => {
+            const themeSwitchCheckbox = document.querySelector('.theme-switch__checkbox');
+            themeSwitchCheckbox.addEventListener('change', function() {
                 document.body.classList.toggle('theme-dark');
             });
         });
