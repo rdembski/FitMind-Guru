@@ -21,29 +21,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 </head>
 <body class="main-layout">
-    <!-- Nagłówek z menu -->
-    <header>
-        <!-- Treść nagłówka -->
-    </header>
+    <!-- Treść strony: Nagłówek, Sekcje, Stopka, jak podano w poprzednich fragmentach -->
+    
+    <!-- Wklej tutaj treść swojej strony (nagłówek, sekcje, stopka) -->
 
-    <!-- Przełącznik motywu ciemnego/jasnego -->
+    <!-- Przełącznik trybu ciemnego/jasnego -->
     <label class="theme-switch">
-        <input type="checkbox" class="theme-switch__checkbox">
-        <!-- SVG i pozostałe elementy przełącznika -->
+      <input type="checkbox" class="theme-switch__checkbox">
+      <!-- SVG i elementy przełącznika z poprzednich fragmentów -->
     </label>
-
-    <!-- Sekcja główna -->
-    <section class="banner_main">
-        <!-- Treść sekcji głównej -->
-    </section>
-
-    <!-- Sekcje tematyczne -->
-    <!-- Treść pozostałych sekcji -->
-
-    <!-- Stopka -->
-    <footer>
-        <!-- Treść stopki -->
-    </footer>
 
     <!-- Skrypty JS -->
     <script src="js/jquery.min.js"></script>
@@ -53,10 +39,9 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script>
-        // Kod dla Owl Carousel
+        // Kod dla Owl Carousel i innych skryptów
         $(document).ready(function() {
-            var owl = $('.owl-carousel');
-            owl.owlCarousel({
+            $('.owl-carousel').owlCarousel({
                 margin: 10,
                 nav: true,
                 loop: true,
@@ -66,22 +51,13 @@
                     1000: { items: 3 }
                 }
             });
-        });
-    </script>
-    <script>
-      // Skrypt dla przełącznika trybu ciemnego/jasnego
-      document.addEventListener('DOMContentLoaded', function () {
-        const themeSwitchCheckbox = document.querySelector('.theme-switch__checkbox');
-        const body = document.body;
 
-        themeSwitchCheckbox.addEventListener('change', function() {
-          if(this.checked) {
-            body.classList.add('theme-dark');
-          } else {
-            body.classList.remove('theme-dark');
-          }
+            // Przełącznik motywu ciemnego/jasnego
+            const themeSwitch = document.querySelector('.theme-switch__checkbox');
+            themeSwitch.addEventListener('change', () => {
+                document.body.classList.toggle('theme-dark');
+            });
         });
-      });
     </script>
 </body>
 </html>
