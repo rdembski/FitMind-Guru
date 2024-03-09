@@ -1,89 +1,209 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <!-- Reszta metadanych -->
+    <!-- Podstawowe metadane -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>FitMind Guru</title>
+    <meta name="keywords" content="zdrowie, fitness, dieta, trening, kontuzje">
+    <meta name="description" content="FitMind Guru to Twoje centrum wiedzy o zdrowym stylu życia.">
+    <meta name="author" content="FitMind Guru Team">
+    <!-- Style CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Reszta linków do arkuszy stylów -->
-    <!-- Dalsze style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 </head>
-<body>
-    <div class="wrapper">
-        <!-- Wysuwane menu -->
-        <nav id="sidebar" class="active">
-            <div class="sidebar-header">
-                <h3>FitMind Guru</h3>
-                <strong>FMG</strong>
-            </div>
-            <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        Home
-                    </a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">O nas</a>
-                </li>
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        Strony
-                    </a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Strona 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Strona 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Strona 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Kontakt</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Strona Główna -->
-        <div id="content">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Przełącz Nawigację</span>
+<body class="main-layout">
+    <!-- Nagłówek z menu -->
+    <header>
+        <div class="header_bg">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="FitMind Guru" /></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="#dieta">Dieta</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#sport">Sport</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#kontuzje">Kontuzje</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#przepisy">Przepisy kulinarne</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#odnowa">Odnowa biologiczna</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#o-nas">O nas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sekcja główna -->
+    <section class="banner_main">
+        <div class="container-fluid">
+            <div class="row d_flex">
+                <div class="col-md-5">
+                    <div class="text-bg">
+                        <span>Twoja podróż <br> do zdrowego stylu życia zaczyna się tutaj</span>
+                        <h1>FitMind Guru</h1>
+                        <p>Dołącz do społeczności ludzi, którzy wybrali drogę do lepszego samopoczucia, zdrowia i formy. Znajdziesz u nas porady dotyczące diety, treningów, profilaktyki kontuzji oraz przepisy kulinarne.</p>
+                        <a href="#">Dołącz teraz</a>
+                    </div>
                 </div>
-            </nav>
-            <!-- Tutaj wstawić zawartość strony -->
+                <div class="col-md-7">
+                    <div class="text-img">
+                        <figure><img src="images/banner-img.png" alt="zdrowy styl życia" /></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja kategorii -->
+    <div id="service" class="three_box">
+        <div class="container">
+            <div class="row">
+                <!-- Tu wstawić treść dla poszczególnych kategorii jak Dieta, Sport, itd. -->
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="Soft-box">
+                        <i><img src="images/diet-icon.png" alt="Dieta" /></i>
+                        <h3>Dieta</h3>
+                        <p>Znajdź plany żywieniowe dopasowane do Twoich celów - czy to utrata wagi, budowanie masy mięśniowej, czy poprawa samopoczucia.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="Soft-box">
+                        <i><img src="images/sport-icon.png" alt="Sport" /></i>
+                        <h3>Sport</h3>
+                        <p>Odkryj treningi i ćwiczenia, które pomogą Ci osiągnąć wymarzoną sylwetkę i poprawią Twoją kondycję.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="Soft-box">
+                        <i><img src="images/injury-icon.png" alt="Kontuzje" /></i>
+                        <h3>Kontuzje</h3>
+                        <p>Uzyskaj wskazówki, jak zapobiegać kontuzjom oraz jak radzić sobie z już istniejącymi urazami.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Sekcja "O nas" -->
+    <div id="o-nas" class="weare">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>Kim <span class="white">Jesteśmy</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main_weare">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                                <div id="box_ho" class="weare-img_box">
+                                    <figure><img src="images/about-us.png" alt="O nas" /></figure>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                                <div class="weare-box">
+                                    <h3>Nasza misja</h3>
+                                    <p>W FitMind Guru wierzymy, że zdrowy styl życia jest kluczem do szczęścia. Naszą misją jest dostarczanie wiedzy, wsparcia i inspiracji dla osób dążących do lepszego zdrowia, formy i samopoczucia.</p>
+                                    <a class="read_more bg" href="#">Czytaj więcej</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sekcja kontaktowa z formularzem do GPT -->
+    <div id="kontakt" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="titlepage">
+                        <h2>Kontakt <span class="white">z nami</span></h2>
+                    </div>
+                    <div class="cont">
+                        <p>Masz pytania? Chcesz dowiedzieć się więcej? Skorzystaj z formularza poniżej, aby skontaktować się z naszym zespołem.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form class="main_form">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input class="contactus" placeholder="Pełne imię i nazwisko" type="text" name="Full Name">
+                            </div>
+                            <div class="col-sm-12">
+                                <input class="contactus" placeholder="Email" type="text" name="Email">
+                            </div>
+                            <div class="col-sm-12">
+                                <input class="contactus" placeholder="Telefon" type="text" name="Phone">
+                            </div>
+                            <div class="col-sm-12">
+                                <textarea class="textarea" placeholder="Twoja wiadomość" type="text" name="Message"></textarea>
+                            </
+</div>
+                            <div class="col-sm-12">
+                                <button class="send">Wyślij</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stopka -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© 2024 FitMind Guru. Wszystkie prawa zastrzeżone. Projekt: <a href="https://html.design/">Free html Templates</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Skrypty JS -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-            });
+        // Kod dla Owl Carousel
+        $(document).ready(function() {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: true,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 }
+                }
+            })
         });
+        // Kod dla responsywnego menu i innych skryptów
     </script>
 </body>
 </html>
