@@ -1,68 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitMind Guru</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link do Twojego pliku CSS -->
-    <!-- Link do Font Awesome dla ikon -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <!-- Elementy nawigacji -->
+    <!-- Wysuwane menu -->
+    <nav class="menu-container" id="menuContainer">
+        <div class="close-btn" onclick="toggleMenu()">&times;</div>
+        <ul class="menu-list">
+            <li><a href="#home">Strona główna</a></li>
+            <li><a href="#dieta">Dieta</a></li>
+            <li><a href="#sport">Sport</a></li>
+            <li><a href="#kontuzje">Kontuzje</a></li>
+            <li><a href="#przepisy">Przepisy kulinarne</a></li>
+            <li><a href="#odnowa-biologiczna">Odnowa biologiczna</a></li>
+            <li><a href="#mentalne-wsparcie">Wsparcie mentalne</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#o-nas">O nas</a></li>
+        </ul>
     </nav>
-    <header>
-        <!-- Nagłówek z logo aplikacji i głównym przyciskiem akcji -->
-    </header>
-    <main>
+    <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
 
-        <!-- Możliwe, że masz już inne elementy wewnątrz main -->
-        
-        <!-- Sekcja Logowania -->
-        <div class="login-container">
-            <form class="login-form" id="loginForm">
-                <div class="form-group">
-                    <label for="username">Nazwa użytkownika</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Hasło</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <button type="submit">Zaloguj się</button>
-            </form>
+    <!-- Główna sekcja hero -->
+    <header class="hero-section" id="home">
+        <div class="hero-content">
+            <h1>Witaj w FitMind Guru</h1>
+            <p>Twój przewodnik po świecie zdrowia i dobrego samopoczucia.</p>
+            <a href="#o-nas" class="button">Dowiedz się więcej</a>
         </div>
+    </header>
+
+    <!-- Sekcja funkcji aplikacji -->
+    <main class="container">
+        <section id="features">
+            <h2>Co oferuje FitMind Guru?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-apple-alt icon"></i>
+                    <h3>Dieta</h3>
+                    <p>Zbilansowane plany żywieniowe dostosowane do Twoich potrzeb.</p>
+                </div>
+                <!-- Powtórz dla każdej funkcji -->
+            </div>
+        </section>
+
+        <!-- ... pozostałe sekcje ... -->
     </main>
 
-<!-- Sekcja Rejestracji -->
-<div class="registration-container">
-    <form class="registration-form" id="registrationForm">
-        <div class="form-group">
-            <label for="register-username">Nazwa użytkownika</label>
-            <input type="text" id="register-username" name="register-username" required>
-        </div>
-        <div class="form-group">
-            <label for="register-email">Email</label>
-            <input type="email" id="register-email" name="register-email" required>
-        </div>
-        <div class="form-group">
-            <label for="register-password">Hasło</label>
-            <input type="password" id="register-password" name="register-password" required>
-        </div>
-        <div class="form-group">
-            <label for="register-confirm-password">Potwierdź hasło</label>
-            <input type="password" id="register-confirm-password" name="register-confirm-password" required>
-        </div>
-        <button type="submit">Zarejestruj się</button>
-    </form>
-</div>
-
-
-        <!-- Główna zawartość: sekcje profilu, mapy, itd. -->
-   
+    <!-- Stopka -->
     <footer>
-        <!-- Stopka z dodatkowymi informacjami lub linkami -->
+        <div class="footer-content">
+            <p>&copy; 2024 FitMind Guru. Wszelkie prawa zastrzeżone.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <!-- ... inne ikony mediów społecznościowych ... -->
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
