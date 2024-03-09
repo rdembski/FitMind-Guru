@@ -1,3 +1,15 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const themeSwitch = document.querySelector('.theme-switch__checkbox');
+
+  themeSwitch.addEventListener('change', function() {
+    if(this.checked) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  });
+});
+
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const username = document.getElementById('username').value;
