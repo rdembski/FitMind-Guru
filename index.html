@@ -27,6 +27,48 @@
         <i class="fas fa-bars"></i>
     </div>
 
+
+<!-- Sekcja logowania -->
+<p>Nie masz konta? <a href="#register">Zarejestruj się</a></p>
+<section id="login" class="container feature-item">
+    <h2>Logowanie</h2>
+    <form class="form-container" action="/path-to-login" method="POST">
+        <div class="input-field">
+            <label for="login-username">Nazwa użytkownika</label>
+            <input type="text" id="login-username" name="login-username" required>
+        </div>
+        <div class="input-field">
+            <label for="login-password">Hasło</label>
+            <input type="password" id="login-password" name="login-password" required>
+        </div>
+        <button type="submit" class="button">Zaloguj się</button>
+    </form>
+</section>
+
+<!-- Sekcja rejestracji -->
+<p>Masz już konto? <a href="#login">Zaloguj się</a></p>
+<section id="register" class="container feature-item">
+    <h2>Rejestracja</h2>
+    <form class="form-container" action="/path-to-register" method="POST">
+        <div class="input-field">
+            <label for="register-username">Nazwa użytkownika</label>
+            <input type="text" id="register-username" name="register-username" required>
+        </div>
+        <div class="input-field">
+            <label for="register-email">Email</label>
+            <input type="email" id="register-email" name="register-email" required>
+        </div>
+        <div class="input-field">
+            <label for="register-password">Hasło</label>
+            <input type="password" id="register-password" name="register-password" required>
+        </div>
+        <div class="input-field">
+            <label for="register-confirm-password">Potwierdź hasło</label>
+            <input type="password" id="register-confirm-password" name="register-confirm-password" required>
+        </div>
+        <button type="submit" class="button">Zarejestruj się</button>
+    </form>
+</section>
     <!-- Główna sekcja hero -->
     <header class="hero-section" id="home">
         <div class="hero-content">
