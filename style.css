@@ -38,6 +38,24 @@ button:hover {
   background-color: var(--secondary-color);
 }
 
+.menu-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1001; /* Upewnij się, że przycisk jest widoczny nad menu */
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+/* Dodatkowe style, aby poprawić wygląd i widoczność ikony przycisku */
+.fas.fa-bars {
+    color: #fff; /* Domyślny kolor ikony */
+    background-color: var(--primary-color); /* Tło dla lepszej widoczności */
+    padding: 10px;
+    border-radius: 5px;
+}
+
 /* Stylizacja wysuwanego menu */
 .menu-container {
   position: fixed;
