@@ -227,6 +227,23 @@
             })
         });
         // Kod dla responsywnego menu i innych skryptów
+
+<script>
+  // Skrypt dla przełącznika trybu ciemnego/jasnego
+  document.addEventListener('DOMContentLoaded', function () {
+    const themeSwitchCheckbox = document.querySelector('.theme-switch__checkbox');
+    const body = document.body;
+
+    themeSwitchCheckbox.addEventListener('change', function() {
+      if(this.checked) {
+        body.classList.add('theme-dark');
+      } else {
+        body.classList.remove('theme-dark');
+      }
+    });
+  });
+</script>
+
     </script>
 </body>
 </html>
